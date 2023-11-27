@@ -1,5 +1,5 @@
 import { useEffect, useCallback } from "react";
-import Layout from "../layout/Layout"
+import Header from "../layout/Header";
 import useQuiosco from "../hooks/useQuiosco";
 import { formatearDinero } from "../helpers";
 
@@ -17,7 +17,7 @@ export default function Total() {
 
 
     return (     
-   <Layout pagina="Total y Confirmar Pedido">
+   <Header pagina="Total y Confirmar Pedido">
         <h1 className="text-4xl font-black">Total y Confirmar Pedido</h1>
         <p className="text-2xl my-10">Confirma tu Pedido a Continuacion</p>
 
@@ -52,6 +52,6 @@ export default function Total() {
                />
           </div>
         </form>
-   </Layout>)
+   </Header>)
 
 }
